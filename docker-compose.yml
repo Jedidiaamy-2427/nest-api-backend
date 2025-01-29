@@ -9,12 +9,12 @@ services:
     ports:
       - "3001:3000"
     environment:
-      - NODE_ENV=development
-      - DATABASE_HOST=host.docker.internal
-      - DATABASE_PORT=5432
-      - DATABASE_USER=postgres
-      - DATABASE_PASSWORD=postgres
-      - DATABASE_NAME=api_jwt
+      - NODE_ENV=${NODE_ENV}
+      - DATABASE_HOST=${DB_HOST}
+      - DATABASE_PORT=${DB_PORT}
+      - DATABASE_USER=${DB_USER}
+      - DATABASE_PASSWORD=${DB_PASSWORD}
+      - DATABASE_NAME=${DB_NAME}
     depends_on: []
     volumes:
       - .:/app
