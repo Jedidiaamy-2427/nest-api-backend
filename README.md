@@ -58,6 +58,26 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Docker Setup
+Pour faciliter l'installation et l'exécution de l'application avec Docker, suivez les étapes ci-dessous : <br>
+1. Assurez-vous d'avoir Docker et Docker Compose installés sur votre machine. <br> <br>
+2. Créez un fichier <code>.env</code>à la racine du projet avec les variables d'environnement nécessaires <br> <br>
+3. Construisez et démarrez les conteneurs Docker :
+```bash
+# Build application 
+$ docker-compose up --build
+```
+
+L'application sera accessible sur le port défini dans votre fichier <code>.env<code> (par défaut 3001).
+
+## API Documentation
+La documentation de l'API est générée automatiquement et disponible via Swagger. Pour y accéder, démarrez l'application et ouvrez votre navigateur à l'adresse suivante :
+
+```bash
+  http://localhost:3001/api-docs
+```
+Cette documentation vous permettra de visualiser et de tester les différentes routes de l'API.
+
 ## Resources
 
 Check out a few resources that may come in handy when working with NestJS:
