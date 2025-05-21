@@ -5,26 +5,14 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project is a codebase for a backend API developed with [Nest](https://github.com/nestjs/nest), designed to be compatible with any type of application (management, messaging, etc.).  
+It natively integrates a JWT authentication system, follows a clear MVC architecture, and adheres to Clean Code principles.  
+The project structure is optimized, extensible, and easily customizable to fit your specific needs.
+
+
 
 ## Project setup
 
@@ -99,3 +87,92 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 - Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
+## Description
+
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+
+## Installation et configuration rapide
+
+Ce projet propose un script d'installation interactif pour générer automatiquement le fichier `.env` et installer toutes les dépendances nécessaires.
+
+### Étapes d'installation
+
+1. **Cloner le dépôt**
+   ```bash
+   git clone <url-du-repo>
+   cd api-backend-server
+   ```
+
+2. **Installer les dépendances de base**
+   ```bash
+   npm install
+   ```
+
+3. **Lancer le script de setup interactif**
+   > Ce script va vous demander les informations nécessaires (nom du projet, type de base de données, ports, etc.), générer le fichier `.env` et installer les dépendances.
+   ```bash
+   npx ts-node scripts/setup.ts
+   ```
+   Si `ts-node` n'est pas installé, lancez d'abord :
+   ```bash
+   npm install -D ts-node
+   ```
+
+4. **Démarrer le projet**
+   ```bash
+   npm run start:dev
+   ```
+
+---
+
+## Compile and run the project
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
+## Run tests
+
+```bash
+# unit tests
+$ npm run test
+
+# e2e tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
+```
+
+## Docker Setup
+
+Pour faciliter l'installation et l'exécution de l'application avec Docker, suivez les étapes ci-dessous :  
+1. Assurez-vous d'avoir Docker et Docker Compose installés sur votre machine.  
+2. Créez un fichier `.env` à la racine du projet avec les variables d'environnement nécessaires (le script `setup.ts` peut vous aider).  
+3. Construisez et démarrez les conteneurs Docker :
+```bash
+# Build application 
+$ docker-compose up --build
+```
+
+L'application sera accessible sur le port défini dans votre fichier `.env` (par défaut 3001).
+
+## API Documentation
+
+La documentation de l'API est générée automatiquement et disponible via Swagger. Pour y accéder, démarrez l'application et ouvrez votre navigateur à l'adresse suivante :
+
+```bash
+http://localhost:3001/api-docs
+```
+Cette documentation vous permettra de visualiser et de tester les différentes routes de l'API.
+
+## More info
+
+- LinkedIn - [Jedidia Amy](www.linkedin.com/in/jedidia-amy-andrianjafiarifetra-5a3494201)
