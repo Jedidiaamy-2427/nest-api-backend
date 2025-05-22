@@ -5,6 +5,23 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
+<p align="center">
+  <a href="https://github.com/Jedidiaamy-2427/nest-api-backend/actions">
+    <img src="https://github.com/Jedidiaamy-2427/nest-api-backend/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
+  </a>
+  <a href="https://www.npmjs.com/package/nest-api-backend">
+    <img src="https://img.shields.io/npm/v/nest-api-backend.svg" alt="npm version" />
+  </a>
+  <a href="https://github.com/Jedidiaamy-2427/nest-api-backend/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/Jedidiaamy-2427/nest-api-backend" alt="License" />
+  </a>
+  <a href="https://github.com/Jedidiaamy-2427/nest-api-backend">
+    <img src="https://img.shields.io/github/stars/Jedidiaamy-2427/nest-api-backend?style=social" alt="GitHub stars" />
+  </a>
+  <a href="https://codecov.io/gh/Jedidiaamy-2427/nest-api-backend">
+    <img src="https://codecov.io/gh/Jedidiaamy-2427/nest-api-backend/branch/main/graph/badge.svg" alt="Coverage" />
+  </a>
+</p>
 
 ## Description
 

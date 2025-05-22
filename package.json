@@ -1,9 +1,10 @@
 {
   "name": "api-backend-server",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "description": "A NestJS API backend server for a web application.",
+  "private": false,
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
